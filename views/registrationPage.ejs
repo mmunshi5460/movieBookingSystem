@@ -1,0 +1,30 @@
+<%- include('layout/header'); -%>
+    <br>
+    <h2>Register with Us!</h2>
+    <br>
+    <form id="register_form">
+        <div class="mbs_fields">
+            <label for="username">Username</label>
+            <input type="text" name="username" width="100">
+        </div>
+        <div class="mbs_fields">
+            <label for="password">Password</label>
+            <input type="password" name="password" width="100">
+        </div>
+        <div class="mbs_fields">
+            <label for="password1">Re-enter Password</label>
+            <input type="password" name="password1" width="100">
+        </div>
+        <div class="mbs_fields">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" width="100">
+        </div>
+        <div class="mbs_fields">
+            <label for="phone">Phone</label>
+            <input type="number" name="phone" width="100">
+        </div>
+        <input id="mbs_register" type="submit" value="Register" name="register">
+        <input id="mbs_reset"  type="reset" value="Reset" name="reset">
+    </form>
+</body>
+<%- include('layout/footer'); -%>

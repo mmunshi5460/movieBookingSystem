@@ -1,0 +1,58 @@
+<%- include('layout/header'); -%>
+    <section class="mbs_theatre">
+        <h2>Theatre Location Selection</h2>
+        <p id="errors">
+            <% if(typeof(err) !== 'undefined') {
+                for(var error of err){
+                %>
+                <%= error.msg %><br>
+                <%= message %>
+                <%
+                }
+            }
+            %>
+            </p>
+        <form id="location_form" action="" enctype="multipart/form-data" method="POST">
+            <select id="city_Selected" name="city_Selected">
+                <option value="Barrie">Barrie</option>
+                <option value="Brampton">Brampton</option>
+                <option value="Brantford">Brantford</option>
+                <option value="Cambridge">Cambridge</option>
+                <option value="Guelph">Guelph</option>
+                <option value="Hamilton">Hamilton</option>
+                <option value="Kingston">Kingston</option>
+                <option value="Kitchener">Kitchener</option>
+                <option value="London">London</option>
+                <option value="Markham">Markham</option>
+                <option value="Mississauga">Mississauga</option>
+                <option value="Niagara">Niagara</option>
+                <option value="Oshawa">Oshawa</option>
+                <option value="Ottawa">Ottawa</option>
+                <option value="Pickering">Pickering</option>
+                <option value="RichmondHills">Richmond Hills</option>
+                <option value="Sudbury">Sudbury</option>
+                <option value="Toronto">Toronto</option>
+                <option value="ThunderBay">Thunder Bay</option>
+                <option value="Vaughan">Vaughan</option>
+                <option value="Waterloo">Waterloo</option>
+                <option value="Windsor">Windsor</option>
+                <option value="York">York</option>
+            </select>
+            <input type="submit" id="submit" value="Proceed">
+        </form>
+        <div id="maps"> 
+            <script>
+                let map;
+                function initMap() {
+                map = new google.maps.Map(document.getElementById("maps"), {
+                center: { lat: 43.4516, lng: -80.4925 },
+                zoom: 8,
+                });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCElsou48nFsnwZWrNFHndT0zVcN9qiPjo&callback=initMap&v=weekly"async>
+            </script>         
+        </div>
+    </section>
+</body>
+<%- include('layout/footer'); -%>

@@ -1,0 +1,22 @@
+<%- include('layout/header'); -%>
+    <br>
+    <h2>2-Factor Authentication</h2>
+    <br>
+    <form id="2FA">
+        <div class="mbs_fields">
+			<label for="securityQuestion">Security Question</label>
+            <select placeholder="select question" name="securityQuestion">
+				<option value="question1">What is your mother's maiden name?</option>
+				<option value="question2">Which city you were born?</option>
+				<option value="question3">What is the name of your favorite sport?</option>
+			</select>
+        </div>
+        <div class="mbs_fields">
+            <label for="securityAnswer">Security Answer</label>
+            <input type="text" name="securityAnswer" width="100">
+        </div>
+        <input id="mbs_submit" type="submit" value="Submit" name="submit">
+        <input id="mbs_cancel"  type="cancel" value="Cancel" name="cancel">
+    </form>
+</body>
+<%- include('layout/footer'); -%>

@@ -1,0 +1,58 @@
+<%- include('layout/header'); -%>
+    <br>
+    <h2>Payment Information</h2>
+    <br>
+    <form id="register_form">
+        <div class="mbs_fields">
+            <label for="fullName">Full Name</label>
+            <input type="text" name="fullName" width="100">
+        </div>
+        <div class="mbs_fields">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" name="cardNumber" width="100">
+        </div>  
+		<div class="mbs_fields">
+            <label for="expiryDate">Expiry Date</label>
+						<select id="cc_exp_mm" name="cc_exp_mm">
+                            <option value="">Month</option>
+                            <option value="1" selected="selected">January</option>                                
+                            <option value="2">February</option>                             
+                            <option value="3">March</option>                          
+                            <option value="4">April</option>                          
+                            <option value="5">May</option>                           
+                            <option value="6">June</option>                           
+                            <option value="7">July</option>                          
+                            <option value="8">August</option>                            
+                            <option value="9">September</option>                    
+                            <option value="10">October</option>                             
+                            <option value="11">November</option>                            
+                            <option value="12">December</option>                            
+                        </select>
+						<select id="cc_exp_yyyy" name="cc_exp_yyyy">
+							<option value="">Year</option>
+                            <option value="2016" selected="selected">2016</option>                                
+                            <option value="2017">2017</option>                             
+                            <option value="2018">2018</option>                          
+                            <option value="2019">2019</option>                          
+                            <option value="2020">2020</option>                           
+                            <option value="2021">2021</option>                           
+                            <option value="2022">2022</option>                          
+                            <option value="2023">2023</option>                            
+                            <option value="2024">2024</option>                    
+                            <option value="2025">2025</option>                             
+                            <option value="2026">2026</option>                            
+                            <option value="2027">2027</option>
+							<option value="2028">2028</option>                            
+                            <option value="2029">2029</option>
+							<option value="2030">2030</option>
+                        </select>
+        </div>  		
+		<div class="mbs_fields">
+            <label for="cvv">Security Code</label>
+			<input id="cvv" type="text" size="5" name="cvv" value="111"/>
+		</div>
+        <input id="mbs_proceed" type="proceed" value="Proceed Payment" name="proceed">
+        <input id="mbs_cancel"  type="cancel" value="Cancel" name="cancel">
+    </form>
+</body>
+<%- include('layout/footer'); -%>

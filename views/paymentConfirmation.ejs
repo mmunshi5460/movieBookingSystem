@@ -1,0 +1,39 @@
+<%- include('layout/header'); -%>
+<br>
+<h2>Thank you! Your booking is confirmed.</h2>
+<br>
+    <div class="receipt">
+        <p id="receipt"></p>
+        
+        <table>
+            <tr>
+                <th>Customer name</th>
+                <td id="customerName">
+                </td>
+            </tr>
+            <tr>
+                <th>Movie name</th>
+                <td id="movieName">
+            </tr>
+            <tr>
+                <th>Ticket quantity</th>
+                <td id="ticketquantity"></td>
+            </tr>
+            <tr>
+                <th>Subtotal</th>
+                <td id="subtotal"></td>
+            </tr>
+            <tr>
+                <th>Tax</th>
+                <td id="tax"></td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td id="total"></td>
+            </tr>
+        </table>   
+    </div>
+	<br>
+	<button type="submit" value="Go to HomePage"><a href="../pages/HomePage.html">Home</a></button>
+</body>
+<%- include('layout/footer'); -%>

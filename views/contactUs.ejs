@@ -1,0 +1,26 @@
+<%- include('layout/header'); -%>
+    <br>
+    <h2>Contact Us</h2>
+    <br>
+    <form id="register_form">
+        <div class="mbs_fields">
+            <label for="name">Name</label>
+            <input type="text" name="name" width="100">
+        </div>
+        <div class="mbs_fields">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" width="100">
+        </div>
+        <div class="mbs_fields">
+            <label for="phone">Phone</label>
+            <input type="number" name="phone" width="100">
+        </div>
+		<div class="mbs_fields">
+			<label for="comment">Comment</label>
+			<textarea name="comment"></textarea><br>
+		</div>
+       <input id ="mbs_submit" type="submit" value="Submit">
+		<input id ="mns_reset" type="reset" value="Reset">
+    </form>
+</body>
+<%- include('layout/footer'); -%>
